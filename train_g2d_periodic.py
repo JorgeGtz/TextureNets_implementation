@@ -257,7 +257,7 @@ print('Generator''s total number of parameters = ' + str(total_parameters))
 # get descriptor network
 # 'max' used in the paper
 # 'avg' recommended
-vgg = VGG(pool='avg', pad=1)
+vgg = VGG(pool='max', pad=1)
 vgg.load_state_dict(torch.load('./Models/vgg_conv.pth'))
 for param in vgg.parameters():
     param.requires_grad = False
@@ -301,8 +301,8 @@ targets = [GramMatrix()(f).detach() for f in vgg(input_torch, loss_layers)]
 
 
 # training parameters
-batch_size = 2
-max_iter = 1000
+batch_size = 10
+max_iter = 3000
 show_iter = 10
 save_params = 500
 learning_rate = 0.1
@@ -310,7 +310,7 @@ lr_adjust = 300
 lr_decay_coef = 0.8
 min_lr = 0.001
 # use gradient normalization
-use_GN = 0
+use_GN = 1
 
 gen.cuda()
 optimizer = optim.Adam(gen.parameters(), lr=learning_rate)
