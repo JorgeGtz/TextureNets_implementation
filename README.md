@@ -23,7 +23,7 @@ The output file ***params.pytorch** contains the trained parameters of the gener
 
 ## Sample
 The python script **sample_on_demand.py** loads the trained parameters and synthesizes a squared texture of size **sample_size**.
-The code requires the libraries: numpy and torch.
+The code requires the libraries: numpy and torch.  
 **model_folder** must be set as:
 
 model_folder = 'Trained_models/[name of folder of trained model]'
