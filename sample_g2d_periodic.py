@@ -122,7 +122,7 @@ def postp(tensor): # to clip results in the range [0,1]
     return img
 
 
-model_folder = 'Trained_models/2019-01-22_red-peppers256_2D_1347'
+model_folder = 'Trained_models/2019-01-22_animalskin_closeup_exemplar_2D_1754'
 
 #load model
 generator = Pyramid2D(ch_step=8)
