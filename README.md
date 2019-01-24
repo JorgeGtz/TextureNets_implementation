@@ -1,6 +1,6 @@
 # TextureNets_implementation
 
-PyTorch (version 0.4.1) Implementation of the texture synthesis model in [Texture Networks: Feed-forward Synthesis of Textures and Stylized Images](https://arxiv.org/abs/1603.03417) of Ulyanov et al.
+PyTorch (version 0.4.1) implementation of the texture synthesis model in [Texture Networks: Feed-forward Synthesis of Textures and Stylized Images](https://arxiv.org/abs/1603.03417) of Ulyanov et al.
 
 Based on Gatys' [code](https://github.com/leongatys/PytorchNeuralStyleTransfer)
 
