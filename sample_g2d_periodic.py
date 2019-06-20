@@ -128,7 +128,7 @@ model_folder = 'Trained_models/2019-01-22_animalskin_closeup_exemplar_2D_1754'
 generator = Pyramid2D(ch_step=8)
 generator.load_state_dict(torch.load('./' + model_folder + '/params.pytorch'))
 generator.cuda()
-generator.eval()
+#generator.eval() #Using batches of 1 to save memory, but running estimates are not good
 for param in generator.parameters():
     param.requires_grad = False
 
