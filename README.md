@@ -22,7 +22,7 @@ The example textures go in the folder **Textures**.
 The output file ***params.pytorch** contains the trained parameters of the generator network.
 
 ## Sample
-The python script **sample_on_demand.py** loads the trained parameters and synthesizes a squared texture of size **sample_size**.
+The python script **sample_g2d_periodic.py** loads the trained parameters and synthesizes a squared texture of size **sample_size**.
 The code requires the libraries: numpy and torch.  
 **model_folder** must be set as:
 
